@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selitech | Catálogo Oficial de Tecnología</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Estilos CSS Separados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN FIJA -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">
+                    <div class="logo-inner">S</div>
+                </div>
+                <div class="logo-text">SELI<span>TECH</span></div>
+            </a>
+
+            <!-- BUSCADOR -->
+            <div class="search-bar">
+                <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                <input type="text" id="searchInput" placeholder="Buscar por referencia o nombre...">
+            </div>
+
+            <!-- BOTÓN WHATSAPP -->
+            <a href="https://wa.me/573204265056" target="_blank" class="btn-wsp">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 2c-5.514 0-9.999 4.486-9.999 10 0 1.905.534 3.684 1.463 5.203l-1.495 5.467 5.617-1.472c1.472.825 3.161 1.298 4.954 1.298 5.514 0 9.999-4.486 9.999-10s-4.485-10-9.999-10zm5.95 13.916c-.252.712-1.258 1.309-1.742 1.383-.484.075-1.119.344-3.782-.76-3.212-1.332-5.263-4.606-5.424-4.821-.161-.215-1.298-1.728-1.298-3.292 0-1.565.819-2.332 1.11-2.65.291-.318.635-.398.847-.398.212 0 .423.003.608.012.196.01.461-.075.722.551.262.626.898 2.193.978 2.355.08.161.133.351.026.564-.106.212-.16.344-.318.529-.159.185-.335.413-.478.555-.16.16-.327.333-.141.652.186.318.825 1.362 1.77 2.204 1.214 1.082 2.238 1.417 2.556 1.576.318.159.503.133.688-.08.186-.212.795-.927 1.007-1.245.212-.318.423-.265.714-.159.291.106 1.854.874 2.171 1.033.318.159.53.238.608.371.079.133.079.768-.173 1.48z"/></svg>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="badge">
+                <span>Catálogo de Productos 2026</span>
+            </div>
+            <h1 class="hero-title">
+                Accesorios & Tecnología <br>
+                <span class="text-gradient">De Alto Rendimiento</span>
+            </h1>
+            <p class="hero-subtitle">
+                Explora toda nuestra línea de audífonos, cargadores de carga rápida, cables reforzados y multiplicadores con garantía garantizada Selitech.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CATÁLOGO COMPLETO -->
+    <main class="catalog-section">
+        <div class="catalog-header">
+            <div>
+                <span class="section-subtitle">Productos Disponibles</span>
+                <h2 class="section-title">Catálogo Completo</h2>
+            </div>
+            <span class="counter-text" id="counterText">Mostrando productos...</span>
+        </div>
+
+        <!-- BARRA DE FILTROS POR CATEGORÍA -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-category="todos">Todos</button>
+            <button class="filter-btn" data-category="audifonos">Audífonos</button>
+            <button class="filter-btn" data-category="gafas">Gafas</button>
+            <button class="filter-btn" data-category="multiplicador">Multiplicadores</button>
+            <button class="filter-btn" data-category="cargadores">Cargadores</button>
+            <button class="filter-btn" data-category="cables">Cables</button>
+        </div>
+
+        <!-- GRID CON LOS 26 PRODUCTOS CON SUS RUTAS DE IMAGEN CORRECTAS Y PRECIOS -->
+        <div class="product-grid" id="productGrid">
+
+            <!-- AUDÍFONOS -->
+            <article class="product-card" data-category="audifonos" data-ref="YW23" data-name="Audífonos YW23" data-price="$ 51.900,00" data-img="videos/YW23.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Audífonos</span>
+                    <img src="videos/YW23.jpeg" alt="Audífonos YW23" onerror="this.src='videos/YW23.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: YW23</span>
+                        <h3 class="card-title">Audífonos YW23</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 51.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="audifonos" data-ref="S67" data-name="Audífonos S67" data-price="$ 59.900,00" data-img="videos/S67.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Audífonos</span>
+                    <img src="videos/S67.jpeg" alt="Audífonos S67" onerror="this.src='videos/S67.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: S67</span>
+                        <h3 class="card-title">Audífonos S67</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 59.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="audifonos" data-ref="P300" data-name="Audífonos P300" data-price="$ 39.900,00" data-img="videos/P300.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Audífonos</span>
+                    <img src="videos/P300.jpeg" alt="Audífonos P300" onerror="this.src='videos/P300.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P300</span>
+                        <h3 class="card-title">Audífonos P300</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 39.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="audifonos" data-ref="1521" data-name="Audífonos 1521" data-price="$ 9.900,00" data-img="videos/1521.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Audífonos</span>
+                    <img src="videos/1521.jpeg" alt="Audífonos 1521" onerror="this.src='videos/1521.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: 1521</span>
+                        <h3 class="card-title">Audífonos 1521</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 9.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="audifonos" data-ref="1528" data-name="Audífonos 1528" data-price="$ 14.900,00" data-img="videos/1526.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Audífonos</span>
+                    <img src="videos/1526.jpeg" alt="Audífonos 1528" onerror="this.src='videos/1526.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: 1528</span>
+                        <h3 class="card-title">Audífonos 1528</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 14.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="audifonos" data-ref="1583" data-name="Audífonos 1583" data-price="$ 24.900,00" data-img="videos/1566.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Audífonos</span>
+                    <img src="videos/1566.jpeg" alt="Audífonos 1583" onerror="this.src='videos/1566.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: 1583</span>
+                        <h3 class="card-title">Audífonos 1583</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 24.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="audifonos" data-ref="1523" data-name="Audífonos 1523" data-price="$ 24.900,00" data-img="videos/1521.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Audífonos</span>
+                    <img src="videos/1521.jpeg" alt="Audífonos 1523" onerror="this.src='videos/1521.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: 1523</span>
+                        <h3 class="card-title">Audífonos 1523</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 24.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="audifonos" data-ref="1566" data-name="Audífonos 1566" data-price="$ 24.900,00" data-img="videos/1566.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Audífonos</span>
+                    <img src="videos/1566.jpeg" alt="Audífonos 1566" onerror="this.src='videos/1566.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: 1566</span>
+                        <h3 class="card-title">Audífonos 1566</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 24.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- GAFAS -->
+            <article class="product-card" data-category="gafas" data-ref="GL1" data-name="Gafas Smart GL1" data-price="Consultar" data-img="videos/GL1.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Gafas</span>
+                    <img src="videos/GL1.jpeg" alt="Gafas Smart GL1" onerror="this.src='videos/GL1.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: GL1</span>
+                        <h3 class="card-title">Gafas Smart GL1</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">Consultar</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- MULTIPLICADOR -->
+            <article class="product-card" data-category="multiplicador" data-ref="P-1601" data-name="Multiplicador P-1601" data-price="$ 41.900,00" data-img="videos/P-1601.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Multiplicador</span>
+                    <img src="videos/P-1601.jpeg" alt="Multiplicador P-1601" onerror="this.src='videos/P-1601.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P-1601</span>
+                        <h3 class="card-title">Multiplicador P-1601</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 41.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARGADORES -->
+            <article class="product-card" data-category="cargadores" data-ref="P08 MICRO" data-name="Cargador P08 Micro" data-price="$ 19.900,00" data-img="videos/P08-MICRO.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cargadores</span>
+                    <img src="videos/P08-MICRO.jpeg" alt="Cargador P08 Micro" onerror="this.src='videos/P08-MICRO.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P08 MICRO</span>
+                        <h3 class="card-title">Cargador P08 Micro</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 19.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cargadores" data-ref="P08 TYPE-C" data-name="Cargador P08 Type-C" data-price="$ 19.900,00" data-img="videos/P08-C.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cargadores</span>
+                    <img src="videos/P08-C.jpeg" alt="Cargador P08 Type-C" onerror="this.src='videos/P08-C.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P08 TYPE-C</span>
+                        <h3 class="card-title">Cargador P08 Type-C</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 19.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cargadores" data-ref="P10 IP" data-name="Cargador P10 IP" data-price="$ 19.900,00" data-img="videos/P10.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cargadores</span>
+                    <img src="videos/P10.jpeg" alt="Cargador P10 IP" onerror="this.src='videos/P10.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P10 IP</span>
+                        <h3 class="card-title">Cargador P10 IP</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 19.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cargadores" data-ref="P37 TYPE-C" data-name="Cargador P37 Type-C" data-price="$ 24.900,00" data-img="videos/P37.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cargadores</span>
+                    <img src="videos/P37.jpeg" alt="Cargador P37 Type-C" onerror="this.src='videos/P37.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P37 TYPE-C</span>
+                        <h3 class="card-title">Cargador P37 Type-C</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 24.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cargadores" data-ref="P39" data-name="Cargador P39" data-price="$ 24.900,00" data-img="videos/P39.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cargadores</span>
+                    <img src="videos/P39.jpeg" alt="Cargador P39" onerror="this.src='videos/P39.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P39</span>
+                        <h3 class="card-title">Cargador P39</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 24.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cargadores" data-ref="P39 IP" data-name="Cargador P39 IP" data-price="$ 29.900,00" data-img="videos/P39IP.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cargadores</span>
+                    <img src="videos/P39IP.jpeg" alt="Cargador P39 IP" onerror="this.src='videos/P39IP.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P39 IP</span>
+                        <h3 class="card-title">Cargador P39 IP</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 29.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cargadores" data-ref="P39 C-C" data-name="Cargador P39 C-C" data-price="$ 29.900,00" data-img="videos/P39 C-C.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cargadores</span>
+                    <img src="videos/P39 C-C.jpeg" alt="Cargador P39 C-C" onerror="this.src='videos/P39 C-C.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P39 C-C</span>
+                        <h3 class="card-title">Cargador P39 C-C</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 29.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cargadores" data-ref="P62" data-name="Cargador P62" data-price="$ 24.900,00" data-img="videos/P62.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cargadores</span>
+                    <img src="videos/P62.jpeg" alt="Cargador P62" onerror="this.src='videos/P62.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P62</span>
+                        <h3 class="card-title">Cargador P62</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 24.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cargadores" data-ref="P67 C-C" data-name="Cargador P67 C-C" data-price="$ 44.900,00" data-img="videos/P67.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cargadores</span>
+                    <img src="videos/P67.jpeg" alt="Cargador P67 C-C" onerror="this.src='videos/P67.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: P67 C-C</span>
+                        <h3 class="card-title">Cargador P67 C-C</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 44.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CABLES -->
+            <article class="product-card" data-category="cables" data-ref="S-25" data-name="Cable S-25" data-price="$ 9.800,00" data-img="videos/S-25.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cables</span>
+                    <img src="videos/S-25.jpeg" alt="Cable S-25" onerror="this.src='videos/S-25.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: S-25</span>
+                        <h3 class="card-title">Cable S-25</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 9.800,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cables" data-ref="S-21" data-name="Cable S-21" data-price="$ 14.900,00" data-img="videos/S-21.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cables</span>
+                    <img src="videos/S-21.jpeg" alt="Cable S-21" onerror="this.src='videos/S-21.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: S-21</span>
+                        <h3 class="card-title">Cable S-21</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 14.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cables" data-ref="S-23" data-name="Cable S-23" data-price="$ 9.900,00" data-img="videos/S-23.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cables</span>
+                    <img src="videos/S-23.jpeg" alt="Cable S-23" onerror="this.src='videos/S-23.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: S-23</span>
+                        <h3 class="card-title">Cable S-23</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 9.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cables" data-ref="S-22" data-name="Cable S-22" data-price="$ 9.800,00" data-img="videos/S-22.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cables</span>
+                    <img src="videos/S-22.jpeg" alt="Cable S-22" onerror="this.src='videos/S-22.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: S-22</span>
+                        <h3 class="card-title">Cable S-22</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 9.800,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cables" data-ref="S-17" data-name="Cable S-17" data-price="$ 9.900,00" data-img="videos/S-17.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cables</span>
+                    <img src="videos/S-17.jpeg" alt="Cable S-17" onerror="this.src='videos/S-17.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: S-17</span>
+                        <h3 class="card-title">Cable S-17</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 9.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cables" data-ref="S-06" data-name="Cable S-06" data-price="$ 8.900,00" data-img="videos/S-06.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cables</span>
+                    <img src="videos/S-06.jpeg" alt="Cable S-06" onerror="this.src='videos/S-06.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: S-06</span>
+                        <h3 class="card-title">Cable S-06</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 8.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="cables" data-ref="S-03" data-name="Cable S-03" data-price="$ 4.900,00" data-img="videos/S-03.png">
+                <div class="card-img-wrapper">
+                    <span class="category-tag">Cables</span>
+                    <img src="videos/S-03.jpeg" alt="Cable S-03" onerror="this.src='videos/S-03.jpeg'">
+                </div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-ref">REF: S-03</span>
+                        <h3 class="card-title">Cable S-03</h3>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">$ 4.900,00</span>
+                        <button class="btn-detail">Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- VENTANA MODAL FLOTANTE DE DETALLES -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-img-box">
+                <img id="modalImage" src="" alt="Producto Selitech">
+            </div>
+            <div class="modal-info-box">
+                <div>
+                    <span class="card-ref" id="modalRef">REF: -</span>
+                    <h3 class="modal-title" id="modalTitle">Nombre Producto</h3>
+                    <p class="modal-desc">Producto oficial con garantía de calidad y excelente rendimiento para uso diario.</p>
+                    <ul class="modal-specs">
+                        <li>Alta durabilidad</li>
+                        <li>Envío rápido disponible</li>
+                        <li>Soporte y garantía directo con la tienda</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <span class="card-price" id="modalPrice">$ 0</span>
+                    <a href="#" id="modalWspBtn" target="_blank" class="btn-wsp">Pedir por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo-text">SELI<span>TECH</span></div>
+            <p class="footer-text">&copy; 2026 Selitech Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- LÓGICA JAVASCRIPT DE FILTROS Y MODAL -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            const searchInput = document.getElementById('searchInput');
+            const counterText = document.getElementById('counterText');
+
+            let currentCategory = 'todos';
+            let searchQuery = '';
+
+            function applyFilters() {
+                let count = 0;
+                productCards.forEach(card => {
+                    const category = card.dataset.category;
+                    const name = card.dataset.name.toLowerCase();
+                    const ref = card.dataset.ref.toLowerCase();
+
+                    const matchesCategory = (currentCategory === 'todos' || category === currentCategory);
+                    const matchesSearch = name.includes(searchQuery) || ref.includes(searchQuery);
+
+                    if (matchesCategory && matchesSearch) {
+                        card.style.display = 'flex';
+                        count++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                counterText.textContent = `Mostrando ${count} de ${productCards.length} productos`;
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentCategory = btn.dataset.category;
+                    applyFilters();
+                });
+            });
+
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    searchQuery = e.target.value.toLowerCase().trim();
+                    applyFilters();
+                });
+            }
+
+            // MODAL
+            const modal = document.getElementById('productModal');
+            const modalClose = document.getElementById('modalClose');
+            const modalImage = document.getElementById('modalImage');
+            const modalRef = document.getElementById('modalRef');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalPrice = document.getElementById('modalPrice');
+            const modalWspBtn = document.getElementById('modalWspBtn');
+
+            document.querySelectorAll('.btn-detail').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const card = e.target.closest('.product-card');
+                    const name = card.dataset.name;
+                    const ref = card.dataset.ref;
+                    const price = card.dataset.price;
+                    const img = card.querySelector('img').src;
+
+                    modalTitle.textContent = name;
+                    modalRef.textContent = `REF: ${ref}`;
+                    modalPrice.textContent = price;
+                    modalImage.src = img;
+
+                    const msg = encodeURIComponent(`Hola Selitech, quiero información para comprar el producto: ${name} (REF: ${ref}) por ${price}`);
+                    modalWspBtn.href = `https://wa.me/573204265056?text=${msg}`;
+
+                    modal.classList.add('active');
+                });
+            });
+
+            modalClose.addEventListener('click', () => modal.classList.remove('active'));
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) modal.classList.remove('active');
+            });
+
+            applyFilters();
+        });
+    </script>
+</body>
+</html>
